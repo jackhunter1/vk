@@ -16,9 +16,9 @@ def user_request(id_, method_, fields):
     resp = conn.getresponse()
     data_ = json.loads(resp.read())['response'][0]
     for i in data_:
-        print (i)
-    print (data_['home_town'])
+        print(i)
+    print(data_['home_town'])
     return data_
 
 
-print (user_request('63028253', 'users.get', 'bdate,home_town'))
+print(user_request('63028253', 'users.get', 'bdate,home_town'))
