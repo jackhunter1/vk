@@ -21,4 +21,4 @@ def user_request(id_, method_, fields):
     return data_
 
 
-print(user_request('63028253', 'users.get', 'bdate,home_town'))
+print(user_request('63028253', 'users.get', 'bdate,home_town,career,counters,crop_photo,domain'))
